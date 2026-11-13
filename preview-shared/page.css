@@ -53,7 +53,7 @@
  .cf .row{grid-template-columns:1fr}
  .cf .end-a .btn{width:100%}
  .pg-film{clip-path:none!important}
- .pg-film video{aspect-ratio:4/5}
+ .pg-film video{aspect-ratio:16/9}
 }
 .pg-h-m{font-size:clamp(44px,6.6vw,120px)}
 .pv-b .mask .ml{padding-bottom:.1em}
