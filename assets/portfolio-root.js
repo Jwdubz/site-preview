@@ -1053,7 +1053,7 @@
     if (src.indexOf("blob:") === 0 || src.indexOf("data:") === 0) return false;
     try {
       if (typeof window === "undefined" || !window.location) {
-        return src.charAt(0) === "." || src.charAt(0) === "/site-preview/";
+        return src.charAt(0) === "." || src.charAt(0) === "/";
       }
       var resolved = new URL(src, window.location.href);
       return resolved.origin === window.location.origin;
