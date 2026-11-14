@@ -184,7 +184,7 @@
     v.addEventListener("ended",function(){ end.hidden=false; });
     sc.addEventListener("input",function(){ if(v.duration){ v.pause(); v.currentTime=sc.value/1000*v.duration; end.hidden=true; } });
     sc.addEventListener("change",function(){ if(v.currentTime<v.duration-0.05){ var p=v.play(); if(p&&p.catch)p.catch(function(){}); } });
-  } else if(wo&&dlg){ wo.addEventListener("click",function(){ window.location.href="/assets/golden-arrival/golden-arrival-approved.mp4"; }); }
+  } else if(wo&&dlg){ wo.addEventListener("click",function(){ window.location.href="/site-preview/assets/golden-arrival/golden-arrival-approved.mp4"; }); }
 
   /* film hero caption follows the montage (6 cuts x 2.2s from the concept loops; raw, no filters) */
   var pv=d.getElementById("plateVideo");

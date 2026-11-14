@@ -29,7 +29,7 @@ menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setTimeout(
 /* docked consult button: these pages have no hero button to glide from, so it rises into the same bottom-center dock once you scroll, and steps aside at the page's own closing call to action */
 const btn=$('.btn.dock-btn');
 const mqS=matchMedia('(max-width:860px)');
-const books=[...document.querySelectorAll('a[href*="/book"]')].filter(a=>!a.closest('footer'));
+const books=[...document.querySelectorAll('a[href*="/site-preview/book"]')].filter(a=>!a.closest('footer'));
 const lastBook=books[books.length-1];
 const end=lastBook?(lastBook.closest('section')||lastBook):null;
 let off=null,raf=0;

@@ -50,7 +50,7 @@ if(!track||!work)return;
 const cards=[];
 W.forEach((w,i)=>{const a=document.createElement('a');a.className='pc';a.href=`https://${w[0]}.jarrettwroten.com/`;a.target='_blank';a.rel='noopener';
  const ver=w[0]==='truheart'?'p33':'p26';
- a.innerHTML=`<div class="pc-f"><video class="pc-full" muted loop playsinline preload="none" data-poster="/assets/home/film/w-${w[0]}-full.webp?v=${ver}"><source src="/assets/home/film/w-${w[0]}-full.webm?v=${ver}" type="video/webm; codecs=vp9"><source src="/assets/home/film/w-${w[0]}-full.mp4?v=${ver}" type="video/mp4"></video></div><div class="pc-i"><span class="pc-n" aria-hidden="true">${String(i+1).padStart(2,'0')}</span><span class="pc-h">${w[1]}<span class="pc-c">${w[2]}</span></span><span class="pc-o">Open The Concept</span></div>`;
+ a.innerHTML=`<div class="pc-f"><video class="pc-full" muted loop playsinline preload="none" data-poster="/site-preview/assets/home/film/w-${w[0]}-full.webp?v=${ver}"><source src="/site-preview/assets/home/film/w-${w[0]}-full.webm?v=${ver}" type="video/webm; codecs=vp9"><source src="/site-preview/assets/home/film/w-${w[0]}-full.mp4?v=${ver}" type="video/mp4"></video></div><div class="pc-i"><span class="pc-n" aria-hidden="true">${String(i+1).padStart(2,'0')}</span><span class="pc-h">${w[1]}<span class="pc-c">${w[2]}</span></span><span class="pc-o">Open The Concept</span></div>`;
  track.append(a);cards.push(a)});
 let cur=-1;
 const live=(c,j)=>Math.abs(j-cur)<=1||!!c.__vis;

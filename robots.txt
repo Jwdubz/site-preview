@@ -1,6 +1,2 @@
 User-agent: *
-Allow: /
-Disallow: /audit/
-Disallow: /demo/
-
-Sitemap: https://jarrettwroten.com/sitemap.xml
+Disallow: /
